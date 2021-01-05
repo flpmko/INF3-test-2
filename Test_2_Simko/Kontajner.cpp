@@ -22,7 +22,7 @@ void Kontajner::PridajStudenta(char* paNazovSuboru)
 	{
 		string meno;
 		string priezvisko;
-		float priemer;
+		float priemer = 0;
 
 		int i = 0;
 		string text;

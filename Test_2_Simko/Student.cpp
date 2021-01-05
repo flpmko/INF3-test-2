@@ -1,5 +1,6 @@
 #include "Student.h"
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
@@ -9,15 +10,27 @@ Student::Student()
 
 Student::Student(char* paMeno, char* paPriezvisko, float paPriemer)
 {
-	this->aMeno = paMeno;
-	this->aPriezvisko = paPriezvisko;
+	int dlzka1 = strlen(paMeno);
+	aMeno = new char[dlzka1++];
+	strcpy(aMeno, paMeno);
+	
+	int dlzka2 = strlen(paPriezvisko);
+	aPriezvisko = new char[dlzka2++];
+	strcpy(aPriezvisko, paPriezvisko);
+
 	this->aPriemer = paPriemer;
 }
 
 Student::Student(const Student& zdroj)
 {
-	this->aMeno = zdroj.aMeno;
-	this->aPriezvisko = zdroj.aPriezvisko;
+	int dlzka1 = strlen(zdroj.aMeno);
+	aMeno = new char[dlzka1++];
+	strcpy(aMeno, zdroj.aMeno);
+
+	int dlzka2 = strlen(zdroj.aPriezvisko);
+	aPriezvisko = new char[dlzka2++];
+	strcpy(aPriezvisko, zdroj.aPriezvisko);
+
 	this->aPriemer = zdroj.aPriemer;
 }
 
@@ -25,8 +38,14 @@ Student& Student::operator=(const Student& zdroj)
 {
 	if (this != &zdroj)
 	{
-		this->aMeno = zdroj.aMeno;
-		this->aPriezvisko = zdroj.aPriezvisko;
+		int dlzka1 = strlen(zdroj.aMeno);
+		aMeno = new char[dlzka1++];
+		strcpy(aMeno, zdroj.aMeno);
+
+		int dlzka2 = strlen(zdroj.aPriezvisko);
+		aPriezvisko = new char[dlzka2++];
+		strcpy(aPriezvisko, zdroj.aPriezvisko);
+
 		this->aPriemer = zdroj.aPriemer;
 	}
 	return *this;
@@ -44,9 +63,9 @@ float Student::getPriemer()
 
 Student::~Student()
 {
-	/*delete[] aMeno;
-	aMeno = nullptr;
+	delete[] aMeno;
+	//aMeno = nullptr;
 	delete[] aPriezvisko;
-	aPriezvisko = nullptr;
-	aPriemer = 0.0;*/
+	//aPriezvisko = nullptr;
+	//aPriemer = 0.0;
 }
