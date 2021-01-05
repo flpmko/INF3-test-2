@@ -1,4 +1,4 @@
-#Aplikacia
+# Aplikacia
 
 (1 b) Vytvorte projekt pre konzolovú aplikáciu, ktorá
 
