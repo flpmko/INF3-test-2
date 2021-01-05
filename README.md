@@ -1,23 +1,18 @@
 #Aplikacia
-B.      Aplikácia
 
-1.       (1 b) Vytvorte projekt pre konzolovú aplikáciu, ktorá
+(1 b) Vytvorte projekt pre konzolovú aplikáciu, ktorá
 
-2.       (3 b) Vytvorí triedu Student a
+(3 b) Vytvorí triedu Student a
 
-3.       (5 b) Vytvorí údajovú štruktúru (kontajner) do ktorej
+(5 b) Vytvorí údajovú štruktúru (kontajner) do ktorej
 
-4.       (2 b) Z textového súboru načíta zoznam študentov. Každý riadok obsahuje nasledujúce údaje  (jednotlivé údaje v riadku sú oddelené medzerou):
+(2 b) Z textového súboru načíta zoznam študentov. Každý riadok obsahuje nasledujúce údaje  (jednotlivé údaje v riadku sú oddelené medzerou):
 
-a.       Priezvisko
+Priezvisko Meno Dosiahnutý priemer známok v tvare x.xx (double hodnota)
 
-b.       Meno
+(4 b) Zoznam študentov usporiadajte podľa dosiahnutých priemerov vzostupne
 
-c.       Dosiahnutý priemer známok v tvare x.xx (double hodnota)
-
-5.       (4 b) Zoznam študentov usporiadajte podľa dosiahnutých priemerov vzostupne
-
-6.       (5 b) Na konzolu vypíšte usporiadaný zoznam v tvare:
+(5 b) Na konzolu vypíšte usporiadaný zoznam v tvare:
 
 Priemer Priezvisko Meno
 
