@@ -38,6 +38,8 @@ Student& Student::operator=(const Student& zdroj)
 {
 	if (this != &zdroj)
 	{
+		Student::~Student();
+
 		int dlzka1 = strlen(zdroj.aMeno);
 		aMeno = new char[dlzka1++];
 		strcpy(aMeno, zdroj.aMeno);
@@ -64,8 +66,8 @@ float Student::getPriemer()
 Student::~Student()
 {
 	delete[] aMeno;
-	//aMeno = nullptr;
+	aMeno = nullptr;
 	delete[] aPriezvisko;
-	//aPriezvisko = nullptr;
-	//aPriemer = 0.0;
+	aPriezvisko = nullptr;
+	aPriemer = 0.0;
 }
