@@ -6,7 +6,11 @@ DoublePole& DoublePole::operator=(const DoublePole& zdroj)
     if (this != &zdroj)
     {
         DoublePole::~DoublePole();
-        this->aData = zdroj.aData;
+        aData = new double* [100];
+        for (int i = 0; i < 100; i++)
+        {
+            aData[i] = new double(*zdroj.aData[i]);
+        }
     }
     return *this;
 }
@@ -14,9 +18,10 @@ DoublePole& DoublePole::operator=(const DoublePole& zdroj)
 //kopirovaci konstruktor
 DoublePole::DoublePole(const DoublePole& zdroj)
 {
-    if (!this->aData)
+    aData = new double* [100];
+    for (int i = 0; i < 100; i++)
     {
-        this->aData = zdroj.aData;
+        aData[i] = new double(*zdroj.aData[i]);
     }
 }
 

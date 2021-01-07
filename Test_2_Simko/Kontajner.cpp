@@ -47,7 +47,7 @@ void Kontajner::PridajStudenta(char* paNazovSuboru)
 			i++;
 		}
 	}
-	//input.close();
+	input.close();
 }
 
 void Kontajner::Vypis()
@@ -81,9 +81,9 @@ void Kontajner::Vymen(Student& a, Student& b)
 
 Kontajner::~Kontajner()
 {
-	for (int i = 0; i < aPocetZapisanych; i++)
+	/*for (int i = 0; i < aPocetZapisanych; i++)
 	{
 		delete this->zoznam[i];
 	}
-	//delete[] zoznam;
+	delete[] zoznam;*/
 }

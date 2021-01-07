@@ -3,7 +3,6 @@ class DoublePole
 {
 private:
     double** aData = nullptr;
-    void vymaz();
 public:
     DoublePole() : aData(new double* [100])
     {
