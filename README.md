@@ -1,23 +1,23 @@
 # Zadanie
+Vytvorte projekt pre konzolovú aplikáciu (1b), ktorá:
 
-(1 b) Vytvorte projekt pre konzolovú aplikáciu, ktorá
+- vytvorí triedu **Student** (3 b)
 
-(3 b) Vytvorí triedu **Student** a
+- vytvorí údajovú štruktúru/kontajner (5 b)
 
-(5 b) Vytvorí údajovú štruktúru (kontajner) do ktorej
+- do ktorej z textového súboru načíta zoznam študentov (2 b). Každý riadok obsahuje nasledujúce údaje (jednotlivé údaje v riadku sú oddelené medzerou):
 
-(2 b) Z textového súboru načíta zoznam študentov. Každý riadok obsahuje nasledujúce údaje  (jednotlivé údaje v riadku sú oddelené medzerou):
+  Priezvisko Meno Priemer (double hodnota)
 
-*Priezvisko Meno Priemer (double hodnota)*
+- zoznam študentov usporiadajte podľa dosiahnutých priemerov vzostupne (4 b)
 
-(4 b) Zoznam študentov usporiadajte podľa dosiahnutých priemerov vzostupne
+- na konzolu vypíšte usporiadaný zoznam (5 b) v tvare:
 
-(5 b) Na konzolu vypíšte usporiadaný zoznam v tvare:
+  Priemer Priezvisko Meno
 
-*Priemer Priezvisko Meno*
+  1.27 Hillary Clinton
 
-*1.27 Hillary Clinton*
-
-Na uchovávanie údajov do pamäti vytvárajte vlastné kontajnery (pole, strom..., podľa analýzy a uváženia). Použitie štandardných knižničných kontajnerov (vector<>,...) znižuje počet dosiahnutých bodov o 25%.
+Na uchovávanie údajov do pamäti vytvárajte vlastné kontajnery (pole, linked list, binarny strom, ...).
+Použitie štandardných knižničných kontajnerov (vector<>, string, ...) znižuje počet dosiahnutých bodov o 25%.
 
 Vytvorená aplikácia musí byť syntakticky správna (t.j. preložiteľná, bez Error chýb). Nepreložiteľná aplikácia znižuje počet dosiahnutých bodov o 50%.
