@@ -51,7 +51,11 @@ Vytvorte projekt pre konzolovú aplikáciu (1b), ktorá:
 
 - (2 b) do ktorej z textového súboru načíta zoznam študentov. Každý riadok obsahuje nasledujúce údaje (jednotlivé údaje v riadku sú oddelené medzerou):
 
-      Priezvisko Meno Priemer (double hodnota)
+      Priezvisko
+      
+      Meno
+      
+      Priemer (double hodnota)
 
 - (4 b) zoznam študentov usporiadajte podľa dosiahnutých priemerov vzostupne
 
