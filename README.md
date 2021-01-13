@@ -14,20 +14,48 @@
 	University of Žilina<br>Faculty of Management Science and Informatics
 </h2>
 
-# Zadanie
+# INF3 test 2
+## A. Trieda
+Do nasledujúcej triedy:
+
+```cpp
+class DoublePole
+{
+private:
+    double** aData = nullptr;
+public:
+    DoublePole() : aData(new double* [100])
+    {
+        for (int i = 0; i < 100; i++)
+        {
+            aData[i] = new double(0.0);
+        }
+    }
+};
+```
+doplňte:
+
+- (2 b) Deštruktor
+
+- (2 b) Kopírovací konštruktor
+
+- (3 b) Operátor priradenia
+
+
+## B. Aplikácia
 Vytvorte projekt pre konzolovú aplikáciu (1b), ktorá:
 
-- vytvorí triedu **Student** (3 b)
+- (3 b) vytvorí triedu **Student**
 
-- vytvorí údajovú štruktúru/kontajner (5 b)
+- (5 b) vytvorí údajovú štruktúru/kontajner
 
-- do ktorej z textového súboru načíta zoznam študentov (2 b). Každý riadok obsahuje nasledujúce údaje (jednotlivé údaje v riadku sú oddelené medzerou):
+- (2 b) do ktorej z textového súboru načíta zoznam študentov. Každý riadok obsahuje nasledujúce údaje (jednotlivé údaje v riadku sú oddelené medzerou):
 
       Priezvisko Meno Priemer (double hodnota)
 
-- zoznam študentov usporiadajte podľa dosiahnutých priemerov vzostupne (4 b)
+- (4 b) zoznam študentov usporiadajte podľa dosiahnutých priemerov vzostupne
 
-- na konzolu vypíšte usporiadaný zoznam (5 b) v tvare:
+- (5 b) na konzolu vypíšte usporiadaný zoznam v tvare:
 
       Priemer Priezvisko Meno
       
